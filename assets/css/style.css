@@ -80,9 +80,6 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;op
 .facts div{padding:20px 20px 0 0}
 .facts dt{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
 .facts dd{margin:0;font-size:16px;color:var(--text)}
-.scroll-cue{position:absolute;right:var(--gut);bottom:34px;display:flex;align-items:center;gap:10px;font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
-.scroll-cue::after{content:"";width:1px;height:44px;background:linear-gradient(var(--acc),transparent);animation:cue 2.2s ease-in-out infinite}
-@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
 /* ---------- sections ---------- */
 section{position:relative;z-index:1}
@@ -254,8 +251,7 @@ html.js .hero.go h1 .line>span{transform:none}
   .nav a.btn-sm{margin:14px 0 0;justify-content:center;border-radius:999px}
   .mini{grid-template-columns:1fr}
   .tl li,.tl.edu li{grid-template-columns:1fr;gap:6px}
-  .scroll-cue{display:none}
-  .hero{padding-top:104px}
+    .hero{padding-top:104px}
   .facts{margin-top:48px}
 }
 @media (prefers-reduced-motion:reduce){
@@ -264,8 +260,7 @@ html.js .hero.go h1 .line>span{transform:none}
   html.js .rv,html.js .hero h1 .line>span{opacity:1;transform:none}
   .spot{display:none}
 }
-@media print{.hdr,.spot,body::before,.scroll-cue{display:none}}
-
+@media print{.hdr,.spot,.prog,.bigname,body::before{display:none}}
 /* ================= v2 additions ================= */
 @view-transition{navigation:auto}
 ::view-transition-old(root){animation:vt-out .28s ease both}
@@ -284,12 +279,6 @@ html.intro-done .intro{transform:translateY(-100%);visibility:hidden}
 html.no-intro .intro{display:none}
 html:not(.js) .intro{display:none}
 
-/* custom cursor */
-.cur{position:fixed;left:0;top:0;width:10px;height:10px;border-radius:50%;background:var(--acc);pointer-events:none;z-index:150;transform:translate(-50%,-50%);mix-blend-mode:difference;opacity:0;transition:width .25s,height .25s,opacity .3s,background .25s}
-html.has-cur .cur{opacity:1}
-html.has-cur .cur.on{width:48px;height:48px;background:#fff}
-html.has-cur .cur.txt{width:3px;height:28px;border-radius:2px}
-@media (pointer:coarse){.cur{display:none}}
 
 /* hero field canvas */
 .hero .field{position:absolute;inset:0;z-index:-1;width:100%;height:100%;opacity:.9}
@@ -356,7 +345,7 @@ html.has-cur .cur.txt{width:3px;height:28px;border-radius:2px}
 /* reduce motion */
 @media (prefers-reduced-motion:reduce){
   .intro{display:none}.marquee .track{animation:none}.card-art .ring,.card-art .dash{animation:none}
-  .cur{display:none}.hero .field{display:none}.process::after{transition:none}
+  .hero .field{display:none}.process::after{transition:none}
   ::view-transition-old(root),::view-transition-new(root){animation:none}
 }
 
