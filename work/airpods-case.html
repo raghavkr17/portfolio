@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AirPods case redesign — Raghav Krishna Ranganathan</title>
-<meta name="description" content="A team redesign of the AirPods case with an interactive 3D viewer.">
+<title>AirPods case redesign · Raghav Krishna Ranganathan</title>
+<meta name="description" content="A team redesign of the AirPods case for UW HCDE 316, with an interactive 3D model.">
 <meta name="theme-color" content="#07090c">
+<meta property="og:title" content="AirPods case redesign · Raghav Krishna Ranganathan">
+<meta property="og:description" content="A team redesign of the AirPods case for UW HCDE 316, with an interactive 3D model.">
 <meta property="og:image" content="https://raghavkr17.github.io/portfolio/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -15,11 +17,10 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <style>:root{--c:#3ee8d0}</style>
 </head>
-<body class="hide-todo">
+<body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="prog" aria-hidden="true"></div>
 <div class="spot" aria-hidden="true"></div>
-<div class="cur" aria-hidden="true"></div>
 <header class="hdr"><div class="wrap">
   <a class="logo" href="../index.html" aria-label="Raghav Krishna Ranganathan, home"><i>RK</i><span>Raghav Krishna</span></a>
   <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
@@ -29,18 +30,21 @@
   </nav></div></header>
 <main id="main">
 <section class="case-hero" id="top"><div class="wrap">
-  <a class="back" href="../index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All work</a>
+  <a class="back" href="../index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back to all work</a>
   <h1 class="rv">AirPods case redesign</h1>
-  <p class="lede rv" style="--d:.1s">A team redesign of the AirPods charging case: a hidden rear hinge, a snap latch, and an inertia lock that trips during a fall.</p>
-  
-  <dl class="meta rv" style="--d:.2s"><div><dt>Course</dt><dd>UW HCDE 316</dd></div><div><dt>Team</dt><dd>Team AirPods</dd></div><div><dt>Medium</dt><dd>Interactive 3D, Three.js</dd></div><div><dt>Focus</dt><dd>Mechanism &amp; physical design</dd></div></dl>
+  <p class="lede rv" style="--d:.1s">Our team redesigned the AirPods case with a hidden hinge, a snap latch, and a lock that kicks in when you drop it.</p>
+  <dl class="meta rv" style="--d:.2s"><div><dt>Class</dt><dd>UW HCDE 316</dd></div><div><dt>Team</dt><dd>Team AirPods</dd></div><div><dt>Built with</dt><dd>Three.js</dd></div><div><dt>Focus</dt><dd>How the parts move</dd></div></dl>
 </div></section>
 <section class="case-body"><div class="wrap">
-<div class="block rv"><h2>Try it</h2><div class="txt"><p class="big">Open it, peek inside, drop it.</p><p>The viewer below is the project itself, running live. Open and close the lid, toggle see-through mode to find the spring, switch camera views, or run the drop test.</p></div></div><figure class="fig rv"><div class="viewer" data-viewer="airpods-viewer.html" data-title="Interactive 3D viewer of the AirPods case redesign"><img src="../assets/img/airpods-viewer.jpg" alt="Preview of the 3D viewer" loading="lazy" width="1440" height="900"><div class="veil"><button class="go" type="button"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Launch interactive viewer</button></div></div><figcaption>Drag to orbit · scroll to zoom · <a href="airpods-viewer.html" target="_blank" rel="noopener" style="color:var(--c)">open full screen</a>. Drop-test physics are simplified and illustrative, not a validated impact model.</figcaption></figure><div class="block rv"><h2>The redesign</h2><div class="txt"><ul class="list"><li><b>Hidden rear hinge.</b> The lid swings on a hinge tucked out of sight, so the case stays one clean form.</li><li><b>Snap latch with a hook.</b> A hook catches and releases as the lid closes and opens.</li><li><b>A spring you can see.</b> The viewer's see-through mode and spring close-up show how the mechanism stores and releases force.</li><li><b>Inertia lock.</b> In free fall, the lock trips before impact so the lid stays shut when it matters most.</li></ul></div></div><div class="block rv"><h2>Why a viewer?</h2><div class="txt"><p>A mechanism is hard to explain in a static image. Building an interactive model meant teammates and instructors could understand the design by manipulating it, which is a lesson in <b>communicating design through interaction</b>.</p><div class="todo"><b>To add</b>Add your role on the team, the research or user problem that drove the redesign (e.g., lid breaking, accidental opening), your process (sketches, prototypes, testing), and what you learned.</div></div></div>
-<nav class="next" aria-label="Next case study"><a href="seniorguard.html"><span class="lbl">Next project</span><span class="ttl">SeniorGuard →</span></a><a class="btn" href="../index.html#contact">Get in touch</a></nav>
+<div class="block rv"><h2>Try it</h2><div class="txt"><p class="big">Open it, look inside, drop it.</p><p>This is the real model. Open and close the lid, turn on see-through mode to find the spring, switch camera angles, or run the drop test.</p></div></div>
+<figure class="fig rv"><div class="viewer" data-viewer="airpods-viewer.html" data-title="Interactive 3D model of the AirPods case redesign"><img src="../assets/img/airpods-viewer.jpg" alt="Preview of the 3D model with the case open" decoding="async" width="1440" height="900"><div class="veil"><button class="go" type="button"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Play with the model</button></div></div><figcaption>Drag to spin, scroll to zoom, or <a href="airpods-viewer.html" target="_blank" rel="noopener" style="color:var(--c)">open it full screen</a>. The drop physics are simplified, so take them with a grain of salt.</figcaption></figure>
+<div class="block rv"><h2>What we changed</h2><div class="txt"><ul class="list"><li><b>Hidden rear hinge.</b> The lid swings on a hinge you can't see, so the case looks like one clean piece.</li><li><b>Snap latch.</b> A little hook catches when you close the lid and lets go when you open it.</li><li><b>A spring you can actually see.</b> Flip on see-through mode or the spring close-up to watch it work.</li><li><b>Inertia lock.</b> If the case starts falling, the lock trips before it hits the ground so the lid stays shut.</li></ul></div></div>
+<div class="block rv"><h2>Why a 3D model</h2><div class="txt"><p>It's hard to explain how a hinge works with a picture. With a 3D model, you can just play with it and get it.</p><p>That's a big part of HCDE for me. Showing a design through how people interact with it.</p></div></div>
+
+<nav class="next" aria-label="Next project"><a href="seniorguard.html"><span class="lbl">Up next</span><span class="ttl">SeniorGuard →</span></a><a class="btn" href="../index.html#contact">Say hi</a></nav>
 </div></section>
 </main>
 <div class="bigname" aria-hidden="true"><span>Raghav Krishna</span></div>
-<footer><div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle, WA</span><a href="#top">Back to top ↑</a></div></footer>
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle</span><a href="#top">Back to top ↑</a></div></footer>
 <script src="../assets/js/main.js"></script>
 </body></html>
