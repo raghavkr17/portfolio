@@ -58,23 +58,14 @@
 
   /* ---------- spotlight + cursor + magnetic + tilt (desktop only) ---------- */
   if(!reduce&&fine){
-    root.classList.add('has-cur');
-    var spot=d.querySelector('.spot'),cur=d.querySelector('.cur'),raf,mx=0,my=0;
+    var raf,mx=0,my=0;
     W.addEventListener('pointermove',function(e){
       mx=e.clientX;my=e.clientY;
       cancelAnimationFrame(raf);
       raf=requestAnimationFrame(function(){
         root.style.setProperty('--mx',mx+'px');root.style.setProperty('--my',my+'px');
-        if(cur){cur.style.left=mx+'px';cur.style.top=my+'px'}
       });
     },{passive:true});
-    d.addEventListener('pointerover',function(e){
-      if(!cur)return;var t=e.target;
-      cur.classList.toggle('on',!!t.closest('a,button,[role=button],.viewer'));
-      cur.classList.toggle('txt',!!t.closest('p,h1,h2,h3,li,dd')&&!t.closest('a,button'));
-    });
-    d.addEventListener('pointerleave',function(){if(cur)cur.style.opacity=0});
-    d.addEventListener('pointerenter',function(){if(cur)cur.style.opacity=''});
 
     d.querySelectorAll('.mag').forEach(function(b){
       b.addEventListener('pointermove',function(e){
@@ -147,7 +138,7 @@
   d.querySelectorAll('[data-copy]').forEach(function(b){
     b.addEventListener('click',function(){
       var t=b.getAttribute('data-copy'),lab=b.querySelector('span')||b,old=lab.textContent;
-      function done(){lab.textContent='Copied ✓';setTimeout(function(){lab.textContent=old},1800)}
+      function done(){lab.textContent='Copied!';setTimeout(function(){lab.textContent=old},1800)}
       if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){})}else{done()}
     });
   });
