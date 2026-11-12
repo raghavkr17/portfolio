@@ -1,184 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghav Krishna Ranganathan | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raghav Krishna Ranganathan — HCDE designer who ships</title>
+<meta name="description" content="Raghav Krishna Ranganathan is a Human Centered Design & Engineering student at the University of Washington and a software engineer at Muzings. He designs, builds, and tests real products: Mitcham, SeniorGuard, acadAI.">
+<meta name="theme-color" content="#07090c">
+<link rel="canonical" href="https://raghavkr17.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raghav Krishna Ranganathan — designs and builds things people actually need">
+<meta property="og:description" content="HCDE @ UW · Software Engineer at Muzings · Creator of Mitcham and SeniorGuard.">
+<meta property="og:image" content="https://raghavkr17.github.io/portfolio/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Raghav Krishna Ranganathan","jobTitle":"Software Engineer","worksFor":{"@type":"Organization","name":"Muzings"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Washington"},{"@type":"CollegeOrUniversity","name":"Bellevue College"}],"email":"mailto:raghavkr@uw.edu","url":"https://raghavkr17.github.io/portfolio/","sameAs":["https://www.linkedin.com/in/raghav-kr","https://github.com/raghavkr17"],"address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA"}}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="intro" aria-hidden="true"><span class="intro-name">Raghav Krishna</span><span class="intro-bar"></span></div>
+<div class="prog" aria-hidden="true"></div>
+<div class="spot" aria-hidden="true"></div>
+<div class="cur" aria-hidden="true"></div>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-brand">
-                <a href="#home">Raghav Krishna</a>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a> <!-- Projects Link -->
-                <a href="#pycamp">Pycamp</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Raghav Krishna Ranganathan, home"><i>RK</i><span>Raghav Krishna</span></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#design">Design</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn-sm" href="assets/Raghav-Krishna-Ranganathan-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Header Section -->
-    <header id="home">
-        <div class="container">
-            <h1 class="animate__animated animate__fadeIn">Hello, I'm Raghav Krishna Ranganathan</h1>
-            <p class="animate__animated animate__fadeIn animate__delay-1s">Computer Science Enthusiast | ACM Vice President | Running Start Student</p>
-            <a href="#projects" class="btn-primary animate__animated animate__bounceIn">View My Projects</a>
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <canvas class="field" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow rv"><span class="dot" aria-hidden="true"></span>Software Engineer at Muzings · HCDE at UW · Seattle</p>
+    <h1>
+      <span class="line"><span style="--d:.05s">I design and build</span></span>
+      <span class="line"><span style="--d:.15s">things people</span></span>
+      <span class="line"><span style="--d:.25s"><em class="ital">actually</em> need.</span></span>
+    </h1>
+    <p class="lede rv" style="--d:.35s">Human Centered Design &amp; Engineering student who ships. I take a product from the <b>first user conversation</b> to a <b>live, tested release</b>: food rescue, elder care, AI memory.</p>
+    <div class="cta rv" style="--d:.45s">
+      <a class="btn primary mag" href="#work">See selected work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn mag" href="assets/Raghav-Krishna-Ranganathan-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+    </div>
+    <dl class="facts rv" style="--d:.55s">
+      <div><dt>Now</dt><dd>Software Engineer, Muzings</dd></div>
+      <div><dt>Building</dt><dd>Mitcham, in private beta</dd></div>
+      <div><dt>Studying</dt><dd>B.S. HCDE, UW · June 2028</dd></div>
+      <div><dt>Open to</dt><dd>UX engineering &amp; product internships</dd></div>
+    </dl>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Human-centered design</span><span>Full-stack engineering</span><span>Usability &amp; QA testing</span><span>Accessibility</span><span>Prototyping</span><span>Embedded &amp; IoT</span><span>Brand &amp; pitch design</span><span>Node / Express</span><span>PostgreSQL</span><span>Three.js</span><span>Python</span><span>Figma</span>
+  <span>Human-centered design</span><span>Full-stack engineering</span><span>Usability &amp; QA testing</span><span>Accessibility</span><span>Prototyping</span><span>Embedded &amp; IoT</span><span>Brand &amp; pitch design</span><span>Node / Express</span><span>PostgreSQL</span><span>Three.js</span><span>Python</span><span>Figma</span>
+</div></div>
+
+<!-- ================= SELECTED WORK ================= -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv"><span class="mono idx">01</span>Selected <span class="ital">work</span></h2>
+      <p class="rv">Four projects, newest first. Each one started with a real person's problem and ended in something that runs.</p>
+    </div>
+
+    <div class="work">
+      <!-- Mitcham -->
+      <a class="card rv tilt" href="work/mitcham.html" style="--c:#5fd38d" aria-label="Mitcham case study">
+        <div class="card-body">
+          <div>
+            <span class="num">01 · 2026</span>
+            <h3>Mitcham</h3>
+            <p class="one">A two-sided marketplace that turns restaurants' end-of-day surplus into discounted "rescue bags" customers pick up before closing.</p>
+            <div class="tags"><span class="tag hot">Product + full-stack</span><span class="tag">Node / Express</span><span class="tag">PostgreSQL</span><span class="tag">Google OAuth</span></div>
+          </div>
+          <div class="card-foot">
+            <span class="status"><i></i>Private beta · onboarding vendors</span>
+            <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a dedicated and driven computer science enthusiast currently in the Running Start program at Bellevue College. My passion for technology is matched only by my commitment to making a positive impact in my community. Whether it's through leading the ACM at Bellevue College or volunteering my skills to help senior citizens stay safe at home, I believe in the power of technology to bring about meaningful change.</p>
+        <div class="card-art" aria-hidden="true">
+          <svg viewBox="0 0 520 380" fill="none" font-family="Inter,system-ui,sans-serif">
+            <rect x="10" y="10" width="500" height="360" rx="18" fill="#0d1a14" stroke="#1f3a2c"/>
+            <rect x="10" y="10" width="500" height="52" rx="18" fill="#10241a"/>
+            <rect x="28" y="22" width="28" height="28" rx="8" fill="#5fd38d"/>
+            <text x="66" y="42" fill="#eaf7ef" font-size="15" font-weight="600">Mitcham</text>
+            <rect x="190" y="20" width="104" height="30" rx="15" fill="#1f7a4d"/><text x="242" y="40" text-anchor="middle" fill="#fff" font-size="12">Nearby Bags</text>
+            <text x="338" y="40" text-anchor="middle" fill="#8fb9a0" font-size="12">For Vendors</text>
+            <text x="422" y="40" text-anchor="middle" fill="#8fb9a0" font-size="12">Reservations</text>
+            <g class="f1"><rect x="30" y="84" width="140" height="150" rx="14" fill="#122a1e" stroke="#1f3a2c"/><rect x="42" y="96" width="116" height="62" rx="10" fill="#1d4a33"/><circle cx="100" cy="127" r="16" fill="#5fd38d" opacity=".85"/><text x="42" y="182" fill="#eaf7ef" font-size="13" font-weight="600">Sweet shop</text><text x="42" y="201" fill="#8fb9a0" font-size="11">3 bags left · 0.4 km</text><rect x="42" y="209" width="56" height="18" rx="9" fill="#5fd38d"/><text x="70" y="222" text-anchor="middle" fill="#052012" font-size="10.5" font-weight="700">₹149</text></g>
+            <g class="f2"><rect x="190" y="84" width="140" height="150" rx="14" fill="#122a1e" stroke="#5fd38d"/><rect x="202" y="96" width="116" height="62" rx="10" fill="#4a3a1d"/><circle cx="260" cy="127" r="16" fill="#ffb454" opacity=".85"/><text x="202" y="182" fill="#eaf7ef" font-size="13" font-weight="600">Bakery</text><text x="202" y="201" fill="#8fb9a0" font-size="11">5 bags left · 0.9 km</text><rect x="202" y="209" width="56" height="18" rx="9" fill="#5fd38d"/><text x="230" y="222" text-anchor="middle" fill="#052012" font-size="10.5" font-weight="700">₹99</text></g>
+            <g class="f3"><rect x="350" y="84" width="140" height="150" rx="14" fill="#122a1e" stroke="#1f3a2c"/><rect x="362" y="96" width="116" height="62" rx="10" fill="#1d3a4a"/><circle cx="420" cy="127" r="16" fill="#6cc4ff" opacity=".85"/><text x="362" y="182" fill="#eaf7ef" font-size="13" font-weight="600">Grocer</text><text x="362" y="201" fill="#8fb9a0" font-size="11">2 bags left · 1.2 km</text><rect x="362" y="209" width="56" height="18" rx="9" fill="#5fd38d"/><text x="390" y="222" text-anchor="middle" fill="#052012" font-size="10.5" font-weight="700">₹199</text></g>
+            <rect x="30" y="256" width="460" height="92" rx="14" fill="#10241a" stroke="#1f3a2c"/>
+            <text x="46" y="282" fill="#8fb9a0" font-size="11" letter-spacing="1.4">YOUR PICKUP CODE</text>
+            <text x="46" y="324" fill="#5fd38d" font-size="32" font-weight="700" font-family="JetBrains Mono,monospace" letter-spacing="6">M7-4K2</text>
+            <rect x="380" y="282" width="94" height="40" rx="20" fill="#5fd38d"/><text x="427" y="307" text-anchor="middle" fill="#052012" font-size="13" font-weight="700">Reserved ✓</text>
+          </svg>
         </div>
-    </section>
+      </a>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project animate__animated animate__fadeInUp">
-                <div class="project-content">
-                    <div class="project-info">
-                        <h3>Senior Citizen Safety Initiative</h3>
-                        <img src="assets/images/seniors.png" alt="Senior Citizen Safety Initiative">
-                        <p>Installed sensors in homes to help seniors stay safe, inspiring plans for a nonprofit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project animate__animated animate__fadeInUp">
-                <div class="project-content">
-                    <div class="project-info">
-                        <h3>acadAI</h3>
-                        
-                        <div style="position: relative; width: 70%; height: 0; padding-top: 39.375%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin: 1.1em auto; overflow: hidden; border-radius: 8px; will-change:">
-                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-                        src="https://www.canva.com/design/DAGF-U63E48/Fm_KSCw6TkXbbrp4KmzSkw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                        </iframe>
-                        </div>
-
-                        <p>Transforming college applications for underserved students. We use AI to provide personalized, free guidance for high school students to enhance their college admissions chances.
-                        We're currently developing our product and proudly secured third place at the Leaner Startups 2024 AI hackathon! 🎉</p>
-                        <a href="https://www.linkedin.com/posts/leaner-startups_acadai-brought-home-the-3rd-place-medals-activity-7199442745722101760-MsBd?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn-secondary">Leaner Startups Recognition</a>
-                        <a href="https://www.linkedin.com/posts/ananyaghoshchowdhury_excited-to-share-that-our-team-secured-activity-7199658615702503424-ikgu?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn-secondary">Judge Recognition</a>
-                        <a href="https://www.linkedin.com/posts/raghav-kr_excited-to-share-that-our-team-secured-activity-7199106019640107010-g92f?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn-secondary">Personal Post</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project animate__animated animate__fadeInUp">
-                <div class="project-content">
-                    <div class="project-info">
-                        <h3>AI Gearbox</h3>
-                        <img src="assets/images/ai-gearbox.png" alt="AI Gearbox">
-                        <p>In one of my hackathon submissions, I, <a href="https://github.com/daksh-g" target="_blank" class="intext-link">Daksh</a>, and <a href="https://github.com/EpicGamer007" target="_blank" class="intext-link">Abhay</a> created a website that hosts AI tools to help students. This project won the prize for "Best Use of AI in Education" at the MLH 2023 December Hackathon, which had over 400 participants.</p>
-                        <a href="https://devpost.com/software/ai-gearbox" target="_blank" class="btn-secondary">Hackathon</a>
-                        <a href="https://github.com/raghavkr17/AI-Gearbox" target="_blank" class="btn-secondary">Github</a>
-                        <a href="https://youtu.be/wGLcZCJCRCU?si=eEK1T_ECgkwXzFAZ" target="_blank" class="btn-secondary">1st Gen Prototype Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project animate__animated animate__fadeInUp">
-                <div class="project-content">
-                    <div class="project-info">
-                        <h3>Volunteer Connect</h3>
-                        <div style="position: relative; width: 70%; height: 0; padding-top: 39.375%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin: 1.1em auto; overflow: hidden; border-radius: 8px; will-change:">
-                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-                        src="https://www.canva.com/design/DAGTItTkzRA/h4ZnBonu-H8zKsCpyBBjyg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                        </iframe>
-                        </div>
-                        <p>I, along with my team, built a volunteering portal allows users to browse, upload, and connect with volunteering opportunities based on their interests and location. Users are able to track their volunteering hours and progress. This project was nominated at the Hackabyte's 2024 Spring Hackathon, which was judged by industry professionals.</p>
-                        <a href="https://devpost.com/software/volunteer-connect-zaqu5h" target="_blank" class="btn-secondary">Hackathon</a>
-                        <a href="https://github.com/raghavkr17/Volunteer-Connect--HackBytes" target="_blank" class="btn-secondary">Github</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Muzings -->
+      <a class="card rv tilt" href="work/muzings.html" style="--c:#8b9bff" aria-label="Muzings case study">
+        <div class="card-body">
+          <div>
+            <span class="num">02 · 2026 – NOW</span>
+            <h3>Muzings</h3>
+            <p class="one">Owning quality for an early-stage AI startup's capture-and-recall memory assistant: test design, live runs, issue patterns.</p>
+            <div class="tags"><span class="tag hot">QA + product</span><span class="tag">Test design</span><span class="tag">AI / ML</span><span class="tag">Live product</span></div>
+          </div>
+          <div class="card-foot">
+            <span class="status"><i></i>Software Engineer · Jun 2026 – present</span>
+            <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
         </div>
-    </section>
-
-    <!-- Pycamp Section -->
-    <section id="pycamp" class="pycamp-section">
-        <div class="container">
-            <h2>Pycamp: Python Classes</h2>
-            <p>When I was in 8th grade, I initiated PyCamp, a Python programming course designed to introduce kids to coding. My motivation stemmed from a desire to share my passion for programming with my peers, making technology
-                more accessible and demystifying the coding process. Over several weeks, I covered essential Python concepts like variables, loops, conditionals, and functions, ensuring that even absolute beginners could follow
-                along. The course was so impactful that my teacher joined the sessions to learn alongside the students. PyCamp was more than just a teaching experience; it was a way for me to give back to my community and inspire
-                others to embrace the world of coding.</p>
-            
-            <div class="pycamp-content">
-                <!-- Recordings -->
-                <div class="pycamp-item">
-                    <h3>Class Recordings</h3>
-                    <ul>
-                        <li><a href="https://youtu.be/P4anqWRmuMU?si=-_jNXycNK81RPmD6" target="_blank">Week 1: Introduction to Python</a></li>
-                        <li><a href="https://youtu.be/FrIKwBijVkU?si=UxcrjTOk-lRUcobh" target="_blank">Week 2: Understanding Variables, Operators, and Text Output</a></li>
-                        <li><a href="https://youtu.be/MJd9wKwRhvQ?si=TC0lP49UK-oWSquI" target="_blank">Week 3: Variables, Casting, and Lists</a></li>
-                        <li><a href="https://youtu.be/RvlHRN7Yqjs?si=R314N7_bypmqjsli" target="_blank">Week 4: More Lists, Inputs, and Conditionals</a></li>
-                        <li><a href="https://youtu.be/w3FsnFNxlQw?si=W1JpX4dP1HKth2HS" target="_blank">Week 5: For Loops</a></li>
-                        <li><a href="https://youtu.be/GJX4DQu8_k4?si=pGVTQEixy7cI740t" target="_blank">Week 6: Advanced Conditionals & Introduction to Functions</a></li>
-                        <li><a href="https://youtu.be/mBaOrPTVKOU?si=bt_jqeOh8CwQfS9s" target="_blank">Week 7: Final Project Part 1 </a></li>
-                        <li><a href="https://youtu.be/94x2tAvEO04?si=oIR5AcQo_9DKQ1E8" target="_blank">Week 8: Final Project Part 2</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Homework and Documents -->
-                <div class="pycamp-item">
-                    <h3>Homework & Documents</h3>
-                    <ul>
-                        <li><a href="assets/docs/PyCamp Class 1 HW.docx" target="_blank">Week 1: Homework</a></li>
-                        <li><a href="assets/docs/PyCamp Class 2 HW.docx" target="_blank">Week 2: Homework</a></li>
-                        <li><a href="assets/docs/PyCamp Class 3 HW.docx" target="_blank">Week 3: Homework</a></li>
-                        <li><a href="assets/docs/PyCamp Class 5 HW.docx" target="_blank">Week 5: Homework</a></li>
-                        <li><a href="assets/docs/PyCamp Class 6 HW.docx" target="_blank">Week 6: Homework</a></li>
-                        <li><a href="assets/docs/PyCamp Final Project Prompts List.docx" target="_blank">Week 7-8: Final Project</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Slides -->
-                <div class="pycamp-item">
-                    <h3>Class Slides</h3>
-                    <ul>
-                        <li><a href="assets/slides/PyCamp Class 1 Slides.pptx" target="_blank">Week 1: Introduction to Python</a></li>
-                        <li><a href="assets/slides/PyCamp Class 2 Slides.pptx" target="_blank">Week 2: Understanding Variables, Operators, and Text Output</a></li>
-                        <li><a href="assets/slides/PyCamp Class 3 Slides.pptx" target="_blank">Week 3: Variables, Casting, and Lists</a></li>
-                        <li><a href="assets/slides/PyCamp Class 4 Slides.pptx" target="_blank">Week 4: More Lists, Inputs, and Conditionals</a></li>
-                        <li><a href="assets/slides/PyCamp Class 6 Slides.pptx" target="_blank">Week 6: Advanced Conditionals & Introduction to Functions</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="card-art" aria-hidden="true">
+          <svg viewBox="0 0 520 380" fill="none" font-family="Inter,system-ui,sans-serif">
+            <g class="f1"><rect x="30" y="28" width="300" height="64" rx="18" fill="#171c3a" stroke="#2c356e"/><text x="50" y="52" fill="#8b9bff" font-size="10.5" font-family="JetBrains Mono,monospace" letter-spacing="1.4">CAPTURE</text><text x="50" y="74" fill="#e6e9ff" font-size="14">Dentist moved to Thursday at 3</text></g>
+            <g class="f2"><rect x="190" y="118" width="300" height="76" rx="18" fill="#8b9bff"/><text x="210" y="142" fill="#10153a" font-size="10.5" font-family="JetBrains Mono,monospace" letter-spacing="1.4">RECALL</text><text x="210" y="166" fill="#10153a" font-size="14" font-weight="500">Your dentist appointment is</text><text x="210" y="184" fill="#10153a" font-size="14" font-weight="500">Thursday at 3:00 PM.</text></g>
+            <g class="f3"><rect x="30" y="222" width="460" height="130" rx="18" fill="#0e1124" stroke="#232a5a"/><text x="50" y="250" fill="#9aa4d8" font-size="10.5" font-family="JetBrains Mono,monospace" letter-spacing="1.4">TEST RUN</text>
+            <g font-size="13.5" fill="#dfe3ff"><circle cx="56" cy="274" r="6" fill="#5fd38d"/><text x="74" y="279">Capture: relative dates</text><circle cx="56" cy="300" r="6" fill="#5fd38d"/><text x="74" y="305">Recall: paraphrased query</text><circle cx="56" cy="326" r="6" fill="#ffb454"/><text x="74" y="331">Recall: ambiguous names · tracked</text></g></g>
+          </svg>
         </div>
-    </section>
+      </a>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:contactraghavkr@gmail.com">contactraghavkr@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/raghav-kr/">Raghav Krishna on LinkedIn</a></p>
-            </div>
+      <!-- AirPods -->
+      <a class="card rv tilt" href="work/airpods-case.html" style="--c:#3ee8d0" aria-label="AirPods case redesign case study">
+        <div class="card-body">
+          <div>
+            <span class="num">03 · UW HCDE 316</span>
+            <h3>AirPods case redesign</h3>
+            <p class="one">A team redesign of the AirPods case: hidden rear hinge, snap latch, and an inertia lock that trips mid-fall. Explore it in 3D.</p>
+            <div class="tags"><span class="tag hot">Physical + interaction design</span><span class="tag">Three.js</span><span class="tag">Mechanism design</span></div>
+          </div>
+          <div class="card-foot">
+            <span class="status"><i></i>Interactive 3D viewer</span>
+            <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
         </div>
-    </section>
+        <div class="card-art"><img src="assets/img/airpods-viewer.jpg" alt="3D model of the redesigned AirPods case with its lid open, showing the hinge and cyan latch hook" decoding="async" width="1440" height="900"></div>
+      </a>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Raghav Krishna Ranganathan. Passionate about coding, community, and creating a safer world through technology.</p>
+      <!-- SeniorGuard -->
+      <a class="card rv tilt" href="work/seniorguard.html" style="--c:#ffb454" aria-label="SeniorGuard case study">
+        <div class="card-body">
+          <div>
+            <span class="num">04 · NOV 2024</span>
+            <h3>SeniorGuard</h3>
+            <p class="one">An IoT health-monitoring system across 10+ households that alerts caregivers automatically when an elderly person needs help.</p>
+            <div class="tags"><span class="tag hot">Human-centered IoT</span><span class="tag">C / C++</span><span class="tag">Embedded</span><span class="tag">Cloud dashboard</span></div>
+          </div>
+          <div class="card-foot">
+            <span class="status"><i></i>99%+ uptime</span>
+            <span class="more">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
         </div>
-    </footer>
+        <div class="card-art" aria-hidden="true">
+          <svg viewBox="0 0 520 380" fill="none" font-family="JetBrains Mono,monospace">
+            <g stroke="#4a3a1d" stroke-width="1.5" stroke-dasharray="4 6" class="dash"><path d="M260 190 110 80M260 190 410 80M260 190 100 290M260 190 420 296M260 190 260 50M260 190 260 335"/></g>
+            <circle cx="260" cy="190" r="64" fill="#ffb454" opacity=".07" class="ring"/><circle cx="260" cy="190" r="40" fill="#ffb454" opacity=".12"/>
+            <circle cx="260" cy="190" r="26" fill="#ffb454"/><text x="260" y="195" text-anchor="middle" fill="#2a1a00" font-size="11" font-weight="700">CLOUD</text>
+            <g fill="#1a1408" stroke="#ffb454" stroke-width="1.5"><rect x="86" y="62" width="48" height="36" rx="10"/><rect x="386" y="62" width="48" height="36" rx="10"/><rect x="76" y="272" width="48" height="36" rx="10"/><rect x="396" y="278" width="48" height="36" rx="10"/><rect x="236" y="32" width="48" height="36" rx="10"/><rect x="236" y="317" width="48" height="36" rx="10"/></g>
+            <g fill="#ffb454" font-size="9" text-anchor="middle"><text x="110" y="84">HOME 1</text><text x="410" y="84">HOME 2</text><text x="100" y="294">HOME 3</text><text x="420" y="300">HOME 4</text><text x="260" y="54">HOME 5</text><text x="260" y="339">HOME N</text></g>
+            <g class="f2"><rect x="334" y="146" width="150" height="40" rx="20" fill="#ff6b5b"/><text x="409" y="171" text-anchor="middle" fill="#2a0600" font-size="11" font-weight="700">ALERT → CAREGIVER</text></g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <script src="js/scripts.js"></script>
+<!-- ================= PLAY ================= -->
+<section class="sec play" id="play" aria-labelledby="play-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="play-h" class="rv">Don't just read it. <span class="ital">Open it.</span></h2>
+      <p class="rv">The redesigned AirPods case, live. Open and close the lid, peek at the spring, or run the drop test.</p>
+    </div>
+    <div class="viewer rv" data-viewer="work/airpods-viewer.html" data-title="Interactive 3D viewer of the AirPods case redesign">
+      <img src="assets/img/airpods-viewer.jpg" alt="Preview of the 3D viewer showing the redesigned case open" loading="lazy" width="1440" height="900">
+      <div class="veil"><button class="go mag" type="button"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Launch interactive viewer</button></div>
+    </div>
+    <p class="caption rv"><span>Drag to orbit · scroll to zoom. The drop-test physics are simplified and illustrative.</span><a href="work/airpods-viewer.html" target="_blank" rel="noopener">Open full screen ↗</a></p>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats-band" aria-label="By the numbers">
+  <div class="wrap">
+    <ul class="band">
+      <li class="rv"><strong><span class="count" data-to="10">0</span>+</strong><span>households on the SeniorGuard sensor network</span></li>
+      <li class="rv" style="--d:.08s"><strong><span class="count" data-to="99">0</span>%+</strong><span>uptime on safety alerts and production sites</span></li>
+      <li class="rv" style="--d:.16s"><strong><span class="count" data-to="500">0</span>+</strong><span>students reached through ACM workshops</span></li>
+      <li class="rv" style="--d:.24s"><strong>3<sup>rd</sup></strong><span>place, 2024 Leaner Startups AI Hackathon</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv"><span class="mono idx">02</span>How I <span class="ital">work</span></h2>
+      <p class="rv">HCDE taught me to ask who it's for. Engineering lets me answer with something real. Every project on this page went through these four moves.</p>
+    </div>
+    <ol class="process">
+      <li class="rv"><span class="step">01</span><h3>Listen</h3><p>Start with the person, not the feature. SeniorGuard was shaped around elderly users who should barely notice it and caregivers who need signal, not noise.</p><span class="ev">SeniorGuard · Mitcham vendors</span></li>
+      <li class="rv" style="--d:.08s"><span class="step">02</span><h3>Shape</h3><p>Turn what I heard into flows and forms. Mitcham's reserve → code → pickup loop is three steps because someone is walking to a shop that's about to close.</p><span class="ev">Mitcham · AirPods case · acadAI brand</span></li>
+      <li class="rv" style="--d:.16s"><span class="step">03</span><h3>Build</h3><p>Own it end to end. API, auth, migrations, admin tools, firmware, dashboards. The details users feel usually live in the code, so I don't hand them off.</p><span class="ev">Mitcham · SeniorGuard · Amma Childcare</span></li>
+      <li class="rv" style="--d:.24s"><span class="step">04</span><h3>Prove</h3><p>Test it like it's live, because it is. At Muzings I design test cases, run them against the real product, and track recurring issues so engineering fixes causes, not symptoms.</p><span class="ev">Muzings · 99%+ uptime</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= DESIGN & COMMUNICATION ================= -->
+<section class="sec" id="design">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv"><span class="mono idx">03</span>Design &amp; <span class="ital">communication</span></h2>
+      <p class="rv">Beyond product work: brand, pitch, and community communications for real audiences.</p>
+    </div>
+    <article class="feature rv" style="--c:#a78bfa">
+      <div class="feature-img"><img src="assets/img/acadai-pitch.jpg" alt="Raghav presenting the acadAI pitch to judges at a hackathon, with the acadAI logo on the projector behind him" decoding="async" width="1120" height="746"></div>
+      <div class="feature-body">
+        <span class="mono" style="color:var(--c)">2024 · Co-founder · Brand &amp; pitch</span>
+        <h3 class="serif">acadAI</h3>
+        <p>An AI startup that uses college admissions data to create free, tailored college-prep plans for students from low-income and rural areas. I co-founded it, led the <b>brand identity</b> and the <b>eight-slide pitch deck</b>, then presented it to the judges.</p>
+        <ul class="list" style="margin-top:18px">
+          <li>Visual identity: a purple-to-teal gradient, geometric shapes, a dual-weight wordmark, and a clear type hierarchy chosen to signal trust and innovation.</li>
+          <li>Deck story in eight slides: who we are, the problem, value proposition, market size, revenue model, and a live product demo.</li>
+        </ul>
+        <p class="status" style="margin-top:20px"><i></i>3rd place · 2024 Leaner Startups AI Hackathon · <a href="https://www.linkedin.com/posts/leaner-startups_acadai-brought-home-the-3rd-place-medals-activity-7199442745722101760-MsBd" target="_blank" rel="noopener" style="color:var(--c)">announcement ↗</a></p>
+      </div>
+    </article>
+    <ul class="mini" style="margin-top:16px">
+      <li class="rv"><article><h3>ACM trips to the Bay Area &amp; Boston</h3><p>Designed signage, digital invitations, and RSVP materials for fully planned, funded, student-led trips, and posted recaps for the community.</p><div class="tags"><span class="tag">Event comms</span><span class="tag">Canva</span></div></article></li>
+      <li class="rv" style="--d:.08s"><article><h3>Amma Childcare digital presence</h3><p>Run the Instagram presence (content, scheduling, engagement) and the websites for two facilities, keeping copy, photos, and service info current. <a href="https://childcareamma.wixsite.com/home" target="_blank" rel="noopener">See the live site ↗</a></p><div class="tags"><span class="tag">Instagram</span><span class="tag">Web</span></div></article></li>
+      <li class="rv" style="--d:.16s"><article><h3>Tools</h3><p>Canva (advanced), Figma for UI mockups, and working familiarity with Photoshop and Illustrator. Photography coursework informs composition and lighting.</p><div class="tags"><span class="tag">Canva</span><span class="tag">Figma</span><span class="tag">Photoshop</span><span class="tag">Illustrator</span></div></article></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="sec" id="experience">
+  <div class="wrap split">
+    <div class="sticky">
+      <h2 class="serif rv" style="font-size:clamp(38px,6vw,76px);line-height:1"><span class="mono idx">04</span>Experience <span class="ital">&amp; education</span></h2>
+      <p class="rv" style="color:var(--muted);margin-top:20px;max-width:34ch">Most recent first. <a href="assets/Raghav-Krishna-Ranganathan-Resume.pdf" target="_blank" rel="noopener" style="color:var(--acc)">Full résumé (PDF)</a></p>
+    </div>
+    <div>
+      <ul class="tl">
+        <li class="rv">
+          <span class="when">JUN 2026 – NOW</span>
+          <div><h3>Muzings</h3><p class="role">Software Engineer · Seattle, WA</p>
+            <ul><li>Support product development and quality at an early-stage AI startup building a personal capture-and-recall memory assistant.</li>
+            <li>Own the testing process for new features: designing test cases, running them against the live product, and tracking recurring issues to inform engineering fixes.</li></ul></div>
+        </li>
+        <li class="rv">
+          <span class="when">SEP 2020 – NOW</span>
+          <div><h3>Amma Childcare</h3><p class="role">Software Developer · Bellevue, WA</p>
+            <ul><li>Build and maintain production websites for 2 facilities with cross-browser compatibility and mobile responsiveness.</li>
+            <li>Resolve front-end issues through systematic troubleshooting, keeping 99%+ availability across devices.</li></ul></div>
+        </li>
+        <li class="rv">
+          <span class="when">SEP 2023 – JUN 2025</span>
+          <div><h3>Association for Computing Machinery</h3><p class="role">Vice President · Bellevue College</p>
+            <ul><li>Organized competitive programming sessions and algorithm workshops for 500+ CS students.</li>
+            <li>Coordinated tech company partnerships to bring mentorship and resources to members.</li></ul></div>
+        </li>
+      </ul>
+      <ul class="tl edu" style="margin-top:56px">
+        <li class="rv">
+          <span class="when">EXPECTED JUN 2028</span>
+          <div><h3>University of Washington</h3><p class="role">B.S. Human Centered Design &amp; Engineering · College of Engineering</p></div>
+        </li>
+        <li class="rv">
+          <span class="when">JUN 2025</span>
+          <div><h3>Bellevue College</h3><p class="role">A.A.S. Computer Science · High Honors</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MORE WORK ================= -->
+<section class="sec" id="more" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv">More <span class="ital">builds</span></h2>
+      <p class="rv">Coursework, hackathons, and earlier versions of ideas that grew up. All open on <a href="https://github.com/raghavkr17" target="_blank" rel="noopener" style="color:var(--acc)">GitHub</a>.</p>
+    </div>
+    <ul class="mini">
+      <li class="rv"><a href="https://github.com/raghavkr17/student-mealplan-data-analysis" target="_blank" rel="noopener">
+        <h3>Meal plan spending analysis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+        <p>UW CSE 163 final project. Compares how students spend on food with USDA national food-at-home vs. away-from-home trends. Includes tests and reproducible figures.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Data viz</span></div></a></li>
+      <li class="rv" style="--d:.08s"><a href="https://github.com/raghavkr17/Biryani-Box-V2" target="_blank" rel="noopener">
+        <h3>Biryani Box <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+        <p>A single-restaurant ordering system, built twice (V1 in Python, V2 in JavaScript). It's the origin story of Mitcham.</p>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Python</span></div></a></li>
+      <li class="rv" style="--d:.16s"><a href="https://devpost.com/software/volunteer-connect-zaqu5h" target="_blank" rel="noopener">
+        <h3>Volunteer Connect <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+        <p>HackBytes hackathon project: a portal for students to find on- and off-campus volunteer opportunities through local nonprofits.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">Hackathon</span><span class="tag">Devpost</span></div></a></li>
+      <li class="rv"><a href="https://devpost.com/software/ai-gearbox" target="_blank" rel="noopener">
+        <h3>AI-Gearbox <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+        <p>Combines multiple AI APIs behind one interface to support learning and education tasks. Built for a hackathon.</p>
+        <div class="tags"><span class="tag">APIs</span><span class="tag">AI</span><span class="tag">Devpost</span></div></a></li>
+      <li class="rv" style="--d:.08s"><a href="https://github.com/raghavkr17/CSE-163-UW" target="_blank" rel="noopener">
+        <h3>Coursework repos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+        <p>UW CSE 163 (data programming), Bellevue College CS211 (Java) and DEV110 (C#), AP CSA, and CS50x.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">C#</span><span class="tag">Jupyter</span></div></a></li>
+      <li class="rv" style="--d:.16s"><article>
+        <h3>PyCamp</h3>
+        <p>An 8-week intro Python course I designed and taught to 20+ students in 2020, with 100% completion.</p>
+        <div class="tags"><span class="tag">2020</span><span class="tag">Teaching</span><span class="tag">Curriculum</span></div></article></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec about" id="about" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <h2 class="serif rv" style="font-size:clamp(38px,6vw,76px);line-height:1;margin-bottom:32px"><span class="mono idx">05</span>About <span class="ital">me</span></h2>
+      <p class="rv">I'm a <b>Human Centered Design &amp; Engineering</b> student at the University of Washington, finishing in 2028, after graduating from Bellevue College with high honors in Computer Science.</p>
+      <p class="rv">I like projects where the user is easy to picture: a customer grabbing dinner before the shop closes, or a caregiver who needs to know someone is okay. I build the whole thing, because the details that matter to them usually live in the code.</p>
+    </div>
+    <div class="skills">
+      <div class="rv"><h3>Design &amp; research</h3><div class="chips"><span class="chip">Human-centered design</span><span class="chip">Usability &amp; QA testing</span><span class="chip">Accessibility</span><span class="chip">Canva &amp; Figma</span><span class="chip">Brand &amp; pitch design</span></div></div>
+      <div class="rv"><h3>Languages</h3><div class="chips"><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C / C++</span><span class="chip">C#</span><span class="chip">HTML &amp; CSS</span></div></div>
+      <div class="rv"><h3>Technologies</h3><div class="chips"><span class="chip">Node.js / Express</span><span class="chip">PostgreSQL</span><span class="chip">REST APIs</span><span class="chip">Embedded / IoT</span><span class="chip">Three.js</span><span class="chip">Git</span><span class="chip">AI / ML</span></div></div>
+      <div class="rv"><h3>Competencies</h3><div class="chips"><span class="chip">System design</span><span class="chip">Full-stack</span><span class="chip">Agile</span><span class="chip">Debugging</span><span class="chip">DSA &amp; OOP</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <p class="mono rv" style="margin-bottom:24px">Let's talk</p>
+    <h2 id="contact-h" class="rv">Have something <span class="ital">worth building?</span></h2>
+    <a class="mail rv" href="mailto:raghavkr@uw.edu">raghavkr@uw.edu</a>
+    <div class="links rv">
+      <button class="btn mag" type="button" data-copy="raghavkr@uw.edu"><span>Copy email</span></button>
+      <a class="btn mag" href="https://www.linkedin.com/in/raghav-kr" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn mag" href="https://github.com/raghavkr17" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn mag" href="https://raghavkr17.github.io/mitcham-app/" target="_blank" rel="noopener">Try Mitcham ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="bigname" aria-hidden="true"><span>Raghav Krishna</span></div>
+<footer>
+  <div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle, WA</span><span>Designed and built by hand. No frameworks, no trackers.</span><a href="#top">Back to top ↑</a></div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
