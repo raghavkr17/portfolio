@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mitcham — Raghav Krishna Ranganathan</title>
-<meta name="description" content="Mitcham is a two-sided food-rescue marketplace.">
+<title>Mitcham · Raghav Krishna Ranganathan</title>
+<meta name="description" content="Mitcham lets restaurants sell leftover food cheap before it gets tossed.">
 <meta name="theme-color" content="#07090c">
+<meta property="og:title" content="Mitcham · Raghav Krishna Ranganathan">
+<meta property="og:description" content="Mitcham lets restaurants sell leftover food cheap before it gets tossed.">
 <meta property="og:image" content="https://raghavkr17.github.io/portfolio/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -15,11 +17,10 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <style>:root{--c:#5fd38d}</style>
 </head>
-<body class="hide-todo">
+<body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="prog" aria-hidden="true"></div>
 <div class="spot" aria-hidden="true"></div>
-<div class="cur" aria-hidden="true"></div>
 <header class="hdr"><div class="wrap">
   <a class="logo" href="../index.html" aria-label="Raghav Krishna Ranganathan, home"><i>RK</i><span>Raghav Krishna</span></a>
   <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
@@ -29,18 +30,23 @@
   </nav></div></header>
 <main id="main">
 <section class="case-hero" id="top"><div class="wrap">
-  <a class="back" href="../index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All work</a>
+  <a class="back" href="../index.html#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back to all work</a>
   <h1 class="rv">Mitcham</h1>
-  <p class="lede rv" style="--d:.1s">A two-sided marketplace that connects vendors' end-of-day food surplus with nearby customers, at a discount, before it goes to waste.</p>
-  
-  <dl class="meta rv" style="--d:.2s"><div><dt>Role</dt><dd>Designer &amp; sole full-stack engineer</dd></div><div><dt>Timeline</dt><dd>2026 · grew from Biryani Box</dd></div><div><dt>Status</dt><dd>Private beta, onboarding vendors</dd></div><div><dt>Stack</dt><dd>Vanilla JS · Node/Express · PostgreSQL</dd></div></dl>
+  <p class="lede rv" style="--d:.1s">A marketplace that lets restaurants sell their leftover food cheap before it gets tossed.</p>
+  <dl class="meta rv" style="--d:.2s"><div><dt>Role</dt><dd>Designer + the only engineer</dd></div><div><dt>When</dt><dd>2026 · started as Biryani Box</dd></div><div><dt>Status</dt><dd>Private beta, adding vendors</dd></div><div><dt>Built with</dt><dd>JS · Node/Express · Postgres</dd></div></dl>
 </div></section>
 <section class="case-body"><div class="wrap">
-<div class="block rv"><h2>The problem</h2><div class="txt"><p class="big">Good food gets thrown away every night, simply because the day is over.</p><p>Restaurants, bakeries, sweet shops, and grocers end up with food they can't sell. It isn't bad, the shop is just closing. Meanwhile, nearby customers would happily pay less for it. Nothing connects the two in time.</p></div></div><div class="block rv"><h2>The idea</h2><div class="txt"><p>Vendors list surplus as discounted <b>rescue bags</b>. Customers browse nearby vendors, reserve a bag, and pick it up before closing using a simple code. Less waste, cheaper food, and extra revenue on food that would have been binned.</p><p>Any vendor can apply, get approved, and instantly have a storefront, live bag counts, and a reservation dashboard, with nothing to set up on their side.</p><div class="live"><a class="btn primary" href="https://raghavkr17.github.io/mitcham-app/" target="_blank" rel="noopener">Try the live app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="btn" href="https://github.com/raghavkr17/mitcham-app" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div></div><div class="todo rv" style="grid-column:1/-1"><b>To add</b>Real screenshots of Nearby Bags, a vendor dashboard, and the reservation/pickup-code screen (drop images in assets/img and I will lay them out).</div><div class="block rv"><h2>What I built</h2><div class="txt"><ul class="list"><li><b>Three experiences in one product:</b> customer (Nearby Bags, Reservations), vendor (storefront, live bag counts, reservation dashboard), and admin (approval and oversight).</li><li><b>Real accounts</b> via Sign in with Google, with role-based access so each person only sees what they should.</li><li><b>A full backend:</b> a REST API in Node/Express, a PostgreSQL database on Supabase, database migrations, and admin tooling.</li><li><b>A demo mode:</b> if no backend is configured, the app falls back to a self-contained in-browser mock with a persona picker, so anyone can explore the UI without signing in.</li></ul></div></div><div class="block rv"><h2>Design decisions</h2><div class="txt"><p><b>Pickup codes over payments-first.</b> The core promise is simple: reserve, show a code, collect. Keeping that flow short matters more than a long checkout when someone is walking to a shop before it closes.</p><p><b>Vendor onboarding with no setup.</b> Small shops don't have an IT team. Applying and being approved should be the entire process.</p><p><b>Prices in rupees, built for India.</b> The product is designed around the local food-surplus market it started from.</p><div class="todo"><b>To add</b>Add 1–2 real decisions you made after talking to vendors or customers (what you heard, what you changed).</div></div></div><div class="block rv"><h2>Where it started</h2><div class="txt"><p>Mitcham began as <b>Biryani Box</b>, a single-restaurant ordering system (<a href="https://github.com/raghavkr17/Biryani-Box-V1" target="_blank" rel="noopener" style="color:var(--c)">V1</a>, <a href="https://github.com/raghavkr17/Biryani-Box-V2" target="_blank" rel="noopener" style="color:var(--c)">V2</a>), then grew into a general platform for rescuing surplus across many vendors at once.</p></div></div><div class="block rv"><h2>Status &amp; next</h2><div class="txt"><p>Mitcham is in <b>private beta</b>, and I'm starting to onboard interested vendors ahead of a public launch.</p><div class="todo"><b>To add</b>Add real numbers when you have them (vendors onboarded, bags listed/rescued, pilot feedback). Even small ones are powerful.</div></div></div>
-<nav class="next" aria-label="Next case study"><a href="muzings.html"><span class="lbl">Next project</span><span class="ttl">Muzings →</span></a><a class="btn" href="../index.html#contact">Get in touch</a></nav>
+<div class="block rv"><h2>The problem</h2><div class="txt"><p class="big">Good food gets thrown out every night just because the day's over.</p><p>Bakeries, sweet shops, restaurants, and grocers all end up with food they can't sell. Nothing's wrong with it. They're just closing.</p><p>And people nearby would happily pay less for it. There just wasn't an easy way to connect the two.</p></div></div>
+<div class="block rv"><h2>The idea</h2><div class="txt"><p>Vendors post their extra food as discounted <b>rescue bags</b>. Customers see what's nearby, reserve one, and pick it up with a code before closing.</p><p>Any vendor can apply. Once they're approved, they get their own storefront, live bag counts, and a dashboard for reservations. No setup on their end.</p><div class="live"><a class="btn primary" href="https://raghavkr17.github.io/mitcham-app/" target="_blank" rel="noopener">Try it live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="btn" href="https://github.com/raghavkr17/mitcham-app" target="_blank" rel="noopener">See the code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div></div>
+<div class="block rv"><h2>What I built</h2><div class="txt"><ul class="list"><li><b>Three sides to one app.</b> Customers browse and reserve. Vendors manage bags and pickups. Admins approve new vendors.</li><li><b>Real accounts with Google sign in.</b> Everyone only sees what their role should see.</li><li><b>A full backend I wrote myself.</b> Node/Express API, Postgres on Supabase, migrations, and admin tools.</li><li><b>A demo mode.</b> If the backend is down, the app switches to a mock version so anyone can still click around.</li></ul></div></div>
+<div class="block rv"><h2>Choices I made</h2><div class="txt"><ul class="list"><li><b>Pickup codes before payments.</b> Reserve, show a code, grab your food. I kept it short because you're probably already walking to the shop.</li><li><b>Zero setup for vendors.</b> Small shops don't have IT people. Applying and getting approved is the whole process.</li><li><b>Built for India.</b> Prices are in rupees because that's the market it started in.</li></ul></div></div>
+<div class="block rv"><h2>Where it came from</h2><div class="txt"><p>Mitcham started as <b>Biryani Box</b>, an ordering system for one restaurant (<a href="https://github.com/raghavkr17/Biryani-Box-V1" target="_blank" rel="noopener" style="color:var(--c)">V1</a>, <a href="https://github.com/raghavkr17/Biryani-Box-V2" target="_blank" rel="noopener" style="color:var(--c)">V2</a>). Then I realized the same idea could work for a ton of vendors at once.</p></div></div>
+<div class="block rv"><h2>Where it's at</h2><div class="txt"><p>It's in <b>private beta</b> right now. I'm onboarding vendors who are interested before a public launch.</p></div></div>
+
+<nav class="next" aria-label="Next project"><a href="muzings.html"><span class="lbl">Up next</span><span class="ttl">Muzings →</span></a><a class="btn" href="../index.html#contact">Say hi</a></nav>
 </div></section>
 </main>
 <div class="bigname" aria-hidden="true"><span>Raghav Krishna</span></div>
-<footer><div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle, WA</span><a href="#top">Back to top ↑</a></div></footer>
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle</span><a href="#top">Back to top ↑</a></div></footer>
 <script src="../assets/js/main.js"></script>
 </body></html>
