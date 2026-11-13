@@ -503,3 +503,60 @@ html.js .case-hero h1.rv{opacity:1;transform:none}
 /* contact: shorter */
 .contact.compact{padding:clamp(70px,10vw,120px) 0}
 .contact.compact h2{font-size:clamp(40px,6.4vw,88px)}
+
+/* ================= v5: design back into the compact layout ================= */
+/* hero headline a touch bigger again */
+.hero.compact h1{font-size:clamp(44px,6vw,86px)}
+
+/* glance panel: glowing gradient border + accent stats */
+.glance{border:1px solid transparent;background:linear-gradient(rgba(14,19,25,.86),rgba(14,19,25,.86)) padding-box,linear-gradient(140deg,rgba(62,232,208,.75),rgba(62,232,208,.05) 40%,rgba(139,155,255,.05) 60%,rgba(139,155,255,.6)) border-box;box-shadow:0 30px 80px -40px rgba(62,232,208,.45)}
+.glance-stats strong{background:linear-gradient(120deg,var(--acc),#9ffcef 50%,#8b9bff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:30px}
+.glance-stats strong .count{color:transparent}
+
+/* marquee a bit slimmer */
+.marquee{padding:14px 0}
+
+/* bento work grid */
+.work.two.bento{grid-template-columns:repeat(3,1fr);gap:20px}
+.work.two.bento .card{display:grid}
+.work.two.bento .b-wide{grid-column:span 2;grid-template-columns:1.05fr 1fr}
+.work.two.bento .b-wide .card-art{order:2;height:auto;min-height:300px;border-bottom:0;border-left:1px solid var(--line)}
+.work.two.bento .b-wide h3{font-size:clamp(34px,3.6vw,50px)}
+.work.two.bento .b-tall{grid-row:span 2;grid-template-rows:minmax(280px,1fr) auto}
+.work.two.bento .b-tall .card-art{height:auto}
+.work.two.bento .card:not(.b-wide):not(.b-tall) .card-art{height:170px}
+@media (max-width:1000px){.work.two.bento{grid-template-columns:1fr 1fr}.work.two.bento .b-wide{grid-column:span 2}.work.two.bento .b-tall{grid-row:auto}}
+@media (max-width:760px){.work.two.bento{grid-template-columns:1fr}.work.two.bento .b-wide{grid-column:auto;grid-template-columns:1fr}.work.two.bento .b-wide .card-art{order:-1;min-height:200px;border-left:0;border-bottom:1px solid var(--line)}}
+
+/* experience: lit timeline */
+.xp{position:relative;border-top:0;padding-left:28px}
+.xp::before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--acc),rgba(139,155,255,.6),transparent)}
+.xp li{position:relative;border-bottom:0;margin-bottom:8px;padding:16px 18px;border-radius:14px;border:1px solid transparent;transition:background .25s,border-color .25s}
+.xp li::before{content:"";position:absolute;left:-28px;top:24px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--acc);box-shadow:0 0 12px var(--acc-glow)}
+.xp li:hover{background:var(--surface);border-color:var(--line2)}
+@media (max-width:700px){.xp li{padding:14px 12px}}
+
+/* how I work: gradient-edged chips with a glow on hover */
+.steps li{border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,var(--line2),transparent 60%,rgba(62,232,208,.4)) border-box;transition:transform .3s var(--ease),box-shadow .3s}
+.steps li:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px var(--acc-glow)}
+
+/* more list: accent bar on hover */
+.rows a:hover{box-shadow:inset 3px 0 0 var(--acc)}
+
+/* about: photo + text + skills */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,56px);align-items:start}
+.about-grid > div p{font-size:clamp(17px,1.7vw,19px);color:var(--muted);line-height:1.6;max-width:none}
+.about-grid > div p+p{margin-top:12px}
+.about-grid > div p b{color:var(--text);font-weight:500}
+.about-grid .skills{margin-top:26px}
+.me{margin:0;position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line2);box-shadow:0 40px 90px -50px var(--acc-glow)}
+.me img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+.me::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(7,9,12,.85));pointer-events:none}
+.me figcaption{position:absolute;left:18px;bottom:16px;z-index:1;font-size:15px;color:var(--text);display:flex;gap:10px;align-items:baseline}
+.me figcaption .mono{color:var(--acc)}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+.about-grid .me{grid-row:span 2}
+.about-grid .skills{grid-column:2;margin-top:0}
+.me img{height:auto}
+@media (max-width:860px){.about-grid .me{grid-row:auto}.about-grid .skills{grid-column:auto}}
+.hero.compact h1{font-size:clamp(42px,4.8vw,70px)}
