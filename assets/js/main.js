@@ -14,7 +14,7 @@
 
   /* ---------- hero intro ---------- */
   var hero=d.querySelector('.hero');
-  if(hero){var dl=root.classList.contains('no-intro')?80:900;setTimeout(function(){hero.classList.add('go')},dl)}
+  if(hero){var dl=(!intro||root.classList.contains('no-intro'))?80:900;setTimeout(function(){hero.classList.add('go')},dl)}
 
   /* ---------- header ---------- */
   var hdr=d.querySelector('.hdr');
