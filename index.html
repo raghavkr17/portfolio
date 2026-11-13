@@ -52,8 +52,8 @@
       <p class="eyebrow rv"><span class="dot" aria-hidden="true"></span>Open to UX &amp; product internships</p>
       <h1>
         <span class="line"><span style="--d:.05s">Hey, I'm Raghav.</span></span>
-        <span class="line"><span style="--d:.15s">I design things and</span></span>
-        <span class="line"><span style="--d:.25s"><em class="ital">build</em> them too.</span></span>
+        <span class="line"><span style="--d:.15s">I design things</span></span>
+        <span class="line"><span style="--d:.25s">and <em class="ital">build</em> them too.</span></span>
       </h1>
       <p class="lede rv" style="--d:.35s">HCDE student at UW and software engineer at Muzings. I take products from <b>talking to users</b> to <b>shipped, tested code</b>.</p>
       <div class="cta rv" style="--d:.45s">
@@ -83,6 +83,12 @@
   </div>
 </section>
 
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>User research</span><span>Interaction design</span><span>Full-stack</span><span>User testing</span><span>Accessibility</span><span>Prototyping</span><span>Embedded &amp; IoT</span><span>Node / Express</span><span>PostgreSQL</span><span>Three.js</span><span>Figma</span><span>Python</span>
+  <span>User research</span><span>Interaction design</span><span>Full-stack</span><span>User testing</span><span>Accessibility</span><span>Prototyping</span><span>Embedded &amp; IoT</span><span>Node / Express</span><span>PostgreSQL</span><span>Three.js</span><span>Figma</span><span>Python</span>
+</div></div>
+
 <!-- ================= SELECTED WORK (2x2) ================= -->
 <section class="sec tight" id="work">
   <div class="wrap">
@@ -91,8 +97,8 @@
       <p class="rv">Four projects, newest first. Click any one for the full case study.</p>
     </div>
 
-    <div class="work two">
-      <a class="card rv tilt" href="work/mitcham.html" style="--c:#5fd38d" aria-label="Mitcham case study">
+    <div class="work two bento">
+      <a class="card rv tilt b-wide" href="work/mitcham.html" style="--c:#5fd38d" aria-label="Mitcham case study">
         <div class="card-art" aria-hidden="true">
           <svg viewBox="0 0 520 300" fill="none" font-family="Inter,system-ui,sans-serif">
             <rect x="10" y="10" width="500" height="280" rx="18" fill="#0d1a14" stroke="#1f3a2c"/>
@@ -116,8 +122,17 @@
           <div class="card-foot"><span class="status"><i></i>Private beta, onboarding vendors</span><span class="more">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </div>
       </a>
-
-      <a class="card rv tilt" href="work/muzings.html" style="--c:#8b9bff;--d:.08s" aria-label="Muzings case study">
+      <a class="card rv tilt b-tall" href="work/airpods-case.html" style="--c:#3ee8d0;--d:.08s" aria-label="AirPods case redesign case study">
+        <div class="card-art"><img src="assets/img/airpods-viewer.jpg" alt="3D model of the redesigned AirPods case with the lid open, showing the hinge and latch hook" decoding="async" width="1440" height="900"></div>
+        <div class="card-body">
+          <span class="num">03 · UW HCDE 316 · Team project</span>
+          <h3>AirPods case redesign</h3>
+          <p class="one">A team redesign with a hidden hinge, snap latch, and a lock that kicks in when you drop it.</p>
+          <dl class="kv"><div><dt>Built</dt><dd>Interactive 3D model in Three.js</dd></div><div><dt>Focus</dt><dd>Physical + interaction design</dd></div></dl>
+          <div class="card-foot"><span class="status"><i></i>Playable 3D demo inside</span><span class="more">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+      </a>
+      <a class="card rv tilt" href="work/muzings.html" style="--c:#8b9bff" aria-label="Muzings case study">
         <div class="card-art" aria-hidden="true">
           <svg viewBox="0 0 520 300" fill="none" font-family="Inter,system-ui,sans-serif">
             <g class="f1"><rect x="30" y="30" width="300" height="60" rx="18" fill="#171c3a" stroke="#2c356e"/><text x="50" y="54" fill="#8b9bff" font-size="10.5" font-family="JetBrains Mono,monospace" letter-spacing="1.4">CAPTURE</text><text x="50" y="76" fill="#e6e9ff" font-size="14">Dentist moved to Thursday at 3</text></g>
@@ -134,18 +149,6 @@
           <div class="card-foot"><span class="status"><i></i>Early-stage startup, Seattle</span><span class="more">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </div>
       </a>
-
-      <a class="card rv tilt" href="work/airpods-case.html" style="--c:#3ee8d0" aria-label="AirPods case redesign case study">
-        <div class="card-art"><img src="assets/img/airpods-viewer.jpg" alt="3D model of the redesigned AirPods case with the lid open, showing the hinge and latch hook" decoding="async" width="1440" height="900"></div>
-        <div class="card-body">
-          <span class="num">03 · UW HCDE 316 · Team project</span>
-          <h3>AirPods case redesign</h3>
-          <p class="one">A team redesign with a hidden hinge, snap latch, and a lock that kicks in when you drop it.</p>
-          <dl class="kv"><div><dt>Built</dt><dd>Interactive 3D model in Three.js</dd></div><div><dt>Focus</dt><dd>Physical + interaction design</dd></div></dl>
-          <div class="card-foot"><span class="status"><i></i>Playable 3D demo inside</span><span class="more">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
-        </div>
-      </a>
-
       <a class="card rv tilt" href="work/seniorguard.html" style="--c:#ffb454;--d:.08s" aria-label="SeniorGuard case study">
         <div class="card-art" aria-hidden="true">
           <svg viewBox="0 0 520 300" fill="none" font-family="JetBrains Mono,monospace">
@@ -213,7 +216,11 @@
 
 <!-- ================= ABOUT + SKILLS ================= -->
 <section class="sec tight about" id="about">
-  <div class="wrap split">
+  <div class="wrap about-grid">
+    <figure class="me rv">
+      <img src="assets/img/acadai-pitch.jpg" alt="Raghav pitching acadAI to hackathon judges" decoding="async" width="1120" height="746">
+      <figcaption><span class="mono">2024</span> Pitching acadAI. We took 3rd.</figcaption>
+    </figure>
     <div>
       <h2 class="serif rv" style="font-size:clamp(36px,5vw,60px);line-height:1;margin-bottom:24px"><span class="mono idx">04</span>About <span class="ital">me</span></h2>
       <p class="rv">I'm a junior at UW studying <b>Human Centered Design &amp; Engineering</b>, after a CS associate's at Bellevue College with high honors.</p>
@@ -242,6 +249,7 @@
 </section>
 </main>
 
+<div class="bigname" aria-hidden="true"><span>Raghav Krishna</span></div>
 <footer>
   <div class="wrap"><span>© <span id="yr">2026</span> Raghav Krishna Ranganathan · Seattle</span><a href="#top">Back to top ↑</a></div>
 </footer>
