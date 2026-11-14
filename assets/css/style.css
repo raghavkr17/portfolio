@@ -673,3 +673,40 @@ html.js .case-hero h1.rv{opacity:1;transform:none}
   .work.two.bento .card-art svg{width:84%;max-height:none}
 }
 @media (max-width:760px){.work.two.bento .card .card-art{width:100%;justify-self:stretch}}
+
+/* ================= v11: keep the soft-edged framing, drop the tint + dots ================= */
+.ab-photo img{filter:none}
+.ab-photo:hover img{filter:none;transform:scale(1.02)}
+.ab-photo::before,.ab-photo::after{display:none}
+
+/* ================= v12: use the width, scale type back up ================= */
+.wrap{max-width:1360px}
+.hero.compact h1{font-size:clamp(44px,5.4vw,82px)}
+.hero.compact .lede{font-size:clamp(17px,1.5vw,20px);max-width:54ch}
+.glance{padding:26px 26px 20px}
+.glance dd{font-size:15.5px}
+.glance dt{font-size:11px}
+.glance-stats strong{font-size:34px}
+.glance-stats span{font-size:12.5px}
+.sec.tight .sec-head h2{font-size:clamp(38px,5vw,70px)}
+.sec.tight .sec-head p{font-size:17px}
+.work.two.bento{gap:24px}
+.work.two.bento .card:not(.b-wide) .card-art{height:230px}
+.work.two .card h3{font-size:clamp(30px,3vw,42px)}
+.work.two.bento .b-wide h3{font-size:clamp(36px,3.8vw,56px)}
+.work.two .card p.one{font-size:17px}
+.work.two.bento .b-wide p.one{font-size:clamp(17px,1.5vw,19.5px)}
+.kv div{font-size:15px}
+.work.two .card-body{padding:26px 28px 28px}
+.xp h3{font-size:18.5px}
+.xp p{font-size:16px}
+.steps li{font-size:15.5px;padding:18px 20px}
+.steps b{font-size:17px}
+.rows a,.rows li>div{grid-template-columns:280px 1fr 150px 20px;padding:17px 8px}
+.rows b{font-size:16.5px}
+.rows span{font-size:15.5px}
+.ab-right h2{font-size:clamp(40px,5vw,70px)}
+.ab-right p{font-size:clamp(17px,1.5vw,19px)}
+.ab-skills .chip{font-size:14.5px;padding:7px 15px}
+.contact.compact h2{font-size:clamp(44px,7vw,100px)}
+@media (max-width:760px){.rows a,.rows li>div{grid-template-columns:1fr 20px}}
