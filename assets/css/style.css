@@ -651,3 +651,25 @@ html.js .case-hero h1.rv{opacity:1;transform:none}
 .avatar{width:116px;height:116px}
 .avatar img{object-position:50% 40%}
 @media (max-width:860px){.about3{grid-template-columns:1fr}}
+
+/* ================= v10: zig-zag bento in reading order + plain about photo ================= */
+.work.two.bento .card:not(.b-wide) .card-art{height:200px}
+.work.two.bento .card:not(.b-wide) .card-art svg{width:92%;max-height:92%}
+@media (max-width:1000px){.work.two.bento .b-wide{grid-column:span 2}}
+@media (max-width:760px){.work.two.bento .b-wide{grid-column:auto}}
+
+.about4{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.ab-pic{margin:0}
+.ab-pic img{display:block;width:100%;height:auto;aspect-ratio:1120/746;object-fit:cover;border-radius:18px;border:1px solid var(--line2)}
+.ab-pic figcaption{margin-top:12px;font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:baseline}
+.ab-pic figcaption .mono{color:var(--acc)}
+@media (max-width:860px){.about4{grid-template-columns:1fr}}
+.work.two.bento .b-wide .card-body{justify-content:center;gap:16px}
+.work.two.bento .b-wide .card-foot{margin-top:8px}
+.work.two.bento .b-wide p.one{font-size:clamp(16.5px,1.5vw,18.5px);line-height:1.6}
+.work.two.bento .b-wide .kv div{font-size:15px}
+@media (max-width:760px){
+  .work.two.bento .card .card-art,.work.two.bento .b-wide .card-art,.work.two.bento .card:not(.b-wide) .card-art{height:auto;min-height:0;aspect-ratio:16/10}
+  .work.two.bento .card-art svg{width:84%;max-height:none}
+}
+@media (max-width:760px){.work.two.bento .card .card-art{width:100%;justify-self:stretch}}
